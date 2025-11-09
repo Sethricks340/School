@@ -1,5 +1,5 @@
 # School
-PDFs of notebooks and other material from my college classes.
+PDFs of notebooks and other material from some of my college classes.
 
 | Class   | Course Name                                | Year |
 |----------|---------------------------------------------|------|
