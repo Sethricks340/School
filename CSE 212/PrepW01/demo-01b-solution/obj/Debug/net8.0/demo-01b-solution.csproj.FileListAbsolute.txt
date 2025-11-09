@@ -1,0 +1,14 @@
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\bin\Debug\net8.0\demo-01b-solution.exe
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\bin\Debug\net8.0\demo-01b-solution.deps.json
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\bin\Debug\net8.0\demo-01b-solution.runtimeconfig.json
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\bin\Debug\net8.0\demo-01b-solution.dll
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\bin\Debug\net8.0\demo-01b-solution.pdb
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.AssemblyInfoInputs.cache
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.AssemblyInfo.cs
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.csproj.CoreCompileInputs.cache
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.dll
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\refint\demo-01b-solution.dll
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.pdb
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\demo-01b-solution.genruntimeconfig.cache
+C:\Users\sethr\OneDrive\Desktop\CSE 212\PrepW01\demo-01b-solution\obj\Debug\net8.0\ref\demo-01b-solution.dll

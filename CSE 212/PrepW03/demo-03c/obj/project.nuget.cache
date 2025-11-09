@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/PvGyDqm2Yk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sethr\\OneDrive\\Desktop\\CSE 212\\PrepW03\\demo-03c\\demo-03c.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sethr\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\sethr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\sethr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\sethr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
