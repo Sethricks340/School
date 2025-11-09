@@ -1,0 +1,409 @@
+var simplemaps_usmap_mapdata={
+  main_settings: {
+   //General settings
+    width: "responsive", //'700' or 'responsive'
+    background_color: "#011117",
+    background_transparent: "no",
+    
+    //Label defaults
+    label_color: "#ffffff",
+    label_hover_color: "",
+    label_size: "",
+    label_font: "",
+    hide_labels: "no",
+    border_color: "#011117",
+    
+    //State defaults
+    state_description: "<a  href=\"#\" target=\"myFrame\">Link 1</a><br /><a  href=\"#\" target=\"myFrame\">Link 2</a><br /><a  href=\"#\" target=\"myFrame\">Link 3</a><br />",
+    state_color: "#a26a02",
+    state_hover_color: "#3B729F",
+    state_url: "",
+    all_states_inactive: "no",
+    
+    //Location defaults
+    location_description: "Location description",
+    location_color: "#FF0067",
+    location_opacity: "0.8",
+    location_url: "",
+    location_size: "20",
+    location_type: "circle",
+    all_locations_inactive: "no",
+    url_new_tab: "no",
+    auto_load: "yes",
+    manual_zoom: "no",
+    initial_zoom: "-1",
+    initial_zoom_solo: "yes",
+    popups: "on_click",
+    state_image_url: "",
+    state_image_position: "",
+    all_states_zoomable: "",
+    location_image_url: "",
+    border_size: "hairline",
+    div: "map"
+  },
+  state_specific: {
+    HI: {
+      name: "Hawaii",
+      description: "<a  href=\"labs/cnmoc_stennis.html\" target=\"myFrame\">CNMOC - Pearl Harbor, HI</a><br /><a  href=\"labs/dpaa_honolulunebraska.html\" target=\"myFrame\">DPAA - Honolulu, HI</a><br /><a  href=\"labs/niwcpacific_honoluphilsandiego.html\" target=\"myFrame\">NIWC Pacific - Santa Rita, Guam</a><br /><a  href=\"labs/niwcpacific_honoluphilsandiego.html\" target=\"myFrame\">NIWC Pacific - Honolulu, HI</a><br /><a  href=\"labs/nuwc_pearlharbor.html\" target=\"myFrame\">NUWC - Pearl Harbor, HI</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    AK: {
+      name: "Alaska",
+      description: "<a href=\"labs/nswc_alaska.html\" target=\"myFrame\">NSWC - Ketchikan, AK</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    FL: {
+      name: "Florida",
+      description: "<a href=\"labs/deomi_patrickafb.html\" target=\"myFrame\">DEOMI - Patrick SFB, FL</a><br /><a href=\"labs/navairfrc_jacksonville.html\" target=\"myFrame\">FRCSE - Jacksonville, FL</a><br /><a href=\"labs/navair_orlando.html\" target=\"myFrame\">NAWCTSD - Orlando, FL</a><br /><a href=\"labs/nece_jacksonville.html\" target=\"myFrame\">NECE - Jacksonville, FL</a><br /><a href=\"labs/nmotc_pensacola.html\" target=\"myFrame\">NMOTC - Pensacola, FL</a><br /><a href=\"labs/nswc_panamacity.html\" target=\"myFrame\">NSWC - Panama City, FL</a><br />",
+      inactive: "no",
+      hide: "no"
+    },
+    NH: {
+      name: "New Hampshire",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    VT: {
+      name: "Vermont",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    ME: {
+      name: "Maine",
+      description: "<a href=\"labs/nslc_mechkittery.html\" target=\"myFrame\">NSLC - Kittery, ME</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    RI: {
+      name: "Rhode Island",
+      description: "<a href=\"labs/nuwc_newport.html\" target=\"myFrame\">NUWC - Newport, RI</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    NY: {
+      name: "New York",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    PA: {
+      name: "Pennsylvania",
+      description: "<a href=\"labs/niwcpacific_honoluphilsandiego.html\" target=\"myFrame\">NIWC Pacific - Philadelphia, PA</a><br /><a href=\"labs/nslc_mechkittery.html\" target=\"myFrame\">NSLC - Mechanicsburg, PA</a><br /><a href=\"labs/nswc_phil.html\" target=\"myFrame\">NSWC - Philadelphia, PA</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    NJ: {
+      name: "New Jersey",
+      description: "<a href=\"labs/nawcad_lakehurst.html\" target=\"myFrame\">NAWCAD - Lakehurst, NJ</a><br /><a href=\"labs/nswc_newjersey.html\" target=\"myFrame\">NSWC - Picatinny, NJ</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    DE: {
+      name: "Delaware",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    MD: {
+      name: "Maryland",
+      description: "<a href=\"labs/afrri_bethesda.html\" target=\"myFrame\">AFRRI - Bethesda, MD</a><br /><a href=\"labs/navair_patuxentriver.html\" target=\"myFrame\">NAWCAD - Patuxent River, MD</a><br /><a href=\"labs/nmrc_silversfrederick.html\" target=\"myFrame\" >NMRC - Frederick, MD</a><br /><a href=\"labs/nmrc_silversfrederick.html\" target=\"myFrame\">NMRC - Silver Spring, MD</a><br /><a href=\"labs/nswc_indianhead.html\" target=\"myFrame\">NSWC - Indian Head, MD</a><br /><a href=\"labs/nswc_bethesda.html\" target=\"myFrame\">NSWC Carderock - Bethesda, MD</a><br /><a href=\"labs/usna_annapolis.html\" target=\"myFrame\">USNA - Annapolis, MD</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    VA: {
+      name: "Virginia",
+      description: "<a href=\"labs/cnmoc_stennis.html\" target=\"myFrame\">CNMOC - Norfolk, VA</a><br /><a href=\"labs/mcwl_quantico.html\" target=\"myFrame\">MCWL - Quantico, VA</a><br /><a href=\"labs/niwcatlantic_charlhamprdneworleans.html\" target=\"myFrame\">NIWC Atlantic - Hampton Roads, VA</a><br /><a href=\"labs/nswc_norfolk.html\" target=\"myFrame\">NSWC Carderock CCD - Norfolk, VA</a><br /><a href=\"labs/nswc_dahlgren.html\" target=\"myFrame\">NSWC Dahlgren - Dahlgren, VA</a><br /><a href=\"labs/nswc_pentagon.html\" target=\"myFrame\">NSWC - Pentagon - Arlington, VA</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    WV: {
+      name: "West Virginia",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    OH: {
+      name: "Ohio",
+      description: "<a href=\"labs/nmru_dayton.html\" target=\"myFrame\">NAMRU - Dayton, OH</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    IN: {
+      name: "Indiana",
+      description: "<a href=\"labs/nswc_crane.html\" target=\"myFrame\">NSWC - Crane, IN</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    IL: {
+      name: "Illinois",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    CT: {
+      name: "Connecticut",
+      description: "<a href=\"labs/nsmrl_groton.html\" target=\"myFrame\">NSMRL - Groton, CT</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    WI: {
+      name: "Wisconsin",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    NC: {
+       name: "North Carolina",
+      description: "<a href=\"labs/frce_cherrypt.html\" target=\"myFrame\">FRCE - Cherry Point, NC</a>",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    DC: {
+      name: "District of Columbia",
+      description: "<a href=\"labs/cnmoc_stennis.html\" target=\"myFrame\">CNMOC - Washington, DC</a><br /><a href=\"labs/nhhc_dc.html\" target=\"myFrame\">NHHC - Washington, DC</a><br /><a href=\"labs/nrl_dc.html\" target=\"myFrame\">NRL - Washington, DC</a><br /><a href=\"labs/usno_dc.html\" target=\"myFrame\">USNO - Washington, DC</a><br /><a href=\"labs/tsub_dc.html\" target=\"myFrame\">TSUB - Washington, DC</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    MA: {
+      name: "Massachusetts",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    TN: {
+      name: "Tennessee",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    AR: {
+      name: "Arkansas",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    MO: {
+      name: "Missouri",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    GA: {
+      name: "Georgia",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    SC: {
+      name: "South Carolina",
+      description: "<a href=\"labs/niwcatlantic_charlhamprdneworleans.html\" target=\"myFrame\">NIWC Atlantic - Charleston, SC</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    KY: {
+      name: "Kentucky",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    AL: {
+      name: "Alabama",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    LA: {
+      name: "Louisiana",
+      description: "<a href=\"labs/niwcatlantic_charlhamprdneworleans.html\" target=\"myFrame\">NIWC Atlantic - New Orleans, LA</a>",
+      hide: "no",
+      inactive: "no",
+    },
+    MS: {
+      name: "Mississippi",
+      description: "<a href=\"labs/cnmoc_stennis.html\" target=\"myFrame\">CNMOC - Stennis, MS</a><br /><a href=\"labs/nrl_stennis.html\" target=\"myFrame\">NRL - Stennis, MS</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    IA: {
+      name: "Iowa",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    MN: {
+      name: "Minnesota",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    OK: {
+      name: "Oklahoma",
+      description: "<a href=\"labs/nswc_oklahoma.html\" target=\"myFrame\">NSWC - McAlester, OK</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    TX: {
+      name: "Texas",
+      description: "<a href=\"labs/nmru_sanantonio.html\" target=\"myFrame\">NAMRU - San Antonio, TX</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    NM: {
+      name: "New Mexico",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    KS: {
+      name: "Kansas",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+     NE: {
+      name: "Nebreska",
+      description: "<a href=\"labs/dpaa_honolulunebraska.html\" target=\"myFrame\">DPAA - Omaha, NE</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    SD: {
+      name: "South Dakota",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    ND: {
+      name: "North Dakota",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    WY: {
+      name: "Wyoming",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    MT: {
+      name: "Montana",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    CO: {
+      name: "Colorado",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    UT: {
+      name: "Utah",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    AZ: {
+      name: "Arizona",
+      description: "<a href=\"labs/usno_flagstaff.html\" target=\"myFrame\">USNO - Flagstaff, AZ</a>",
+      hide: "no",
+      inactive: "no"
+      
+    },
+    NV: {
+      name: "Nevada",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    OR: {
+      name: "Oregon",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    WA: {
+      name: "Washington",
+      description: "<a href=\"labs/nuwc_keyport.html\" target=\"myFrame\">NUWC - Keyport, WA</a><br /><a href=\"labs/navsea_bremerton.html\" target=\"myFrame\">PSNS/IMF Puget Sound - Bremerton, WA</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    CA: {
+      name: "California",
+      description: "<a href=\"labs/cnmoc_stennis.html\" target=\"myFrame\">CNMOC - Monterey, CA</a><br /><a href=\"labs/cnmoc_stennis.html\" target=\"myFrame\">CNMOC - San Diego, CA</a><br /><a href=\"labs/navair_northisland.html\" target=\"myFrame\">FRCSW - North Island, CA</a><br /><a href=\"labs/mctssa_camppendleton.html\" target=\"myFrame\">MCTSSA - Camp Pendleton, CA</a><br /><a href=\"labs/navfac_porthueneme.html\" target=\"myFrame\">NAVFAC - Port Hueneme, CA</a><br /><a href=\"labs/navair_chinalmugu.html\" target=\"myFrame\">NAWCWD - China Lake, CA</a><br /><a href=\"labs/navair_chinalmugu.html\" target=\"myFrame\">NAWCWD - Point Mugu, CA</a><br /><a href=\"labs/niwcpacific_honoluphilsandiego.html\" target=\"myFrame\">NIWC Pacific - San Diego, CA</a><br /><a href=\"labs/nhrc_sandiego.html\" target=\"myFrame\">NHRC- San Diego, CA</a><br /><a href=\"labs/nps_monterrey.html\" target=\"myFrame\">NPS - Monterey, CA</a><br /><a href=\"labs/nrl_monterey.html\" target=\"myFrame\">NRL - Monterey, CA</a><br /><a href=\"labs/nswc_corona.html\" target=\"myFrame\">NSWC - Corona, CA</a><br /><a href=\"labs/nswccorona_fallbrook.html\" target=\"myFrame\">NSWC - Fallbrook, CA</a><br /><a href=\"labs/nswc_porthueneme.html\" target=\"myFrame\">NSWC - Port Hueneme, CA</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    MI: {
+      name: "Michigan",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    ID: {
+      name: "Idaho",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "no",
+      inactive: "yes",
+      color: "#002430"
+    },
+    GU: {
+      name: "Guam",
+      description: "<a href=\"labs/niwcpacific_honoluphilsandiego.html\" target=\"myFrame\">NIWC - Santa Rita, GU</a>",
+      hide: "no",
+      inactive: "no"
+    },
+    VI: {
+      name: "Virgin Islands",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "yes",
+      inactive: "no"
+    },
+    PR: {
+      name: "Puerto Rico",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "yes",
+      inactive: "no"
+    },
+    MP: {
+      name: "Northern Mariana Islands",
+      description: "Have multiple links for each state.<br /><a  href=\"#\" onClick='alert(\"You would go to Link 1\")'>Link 1</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 2\")'>Link 2</a><br /><a  href=\"#\" onClick='alert(\"You would go to Link 3\")'>Link 3</a><br />",
+      hide: "yes",
+      inactive: "no"
+    }
+  },
+  locations: {},
+  regions: {},
+  labels: {}
+};

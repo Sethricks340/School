@@ -1,0 +1,27 @@
+outline for recommendation report
+
+intro
+-> a summary of the recommendation report
+problem statement
+-> overview of the problem
+-> outline the impacts of the problem
+description of the solution
+-> detail the solution
+-> how will it address the problem
+-> justification as to why this is the best option
+conclusion
+-> include suggestions on how to implement solution
+
+1. Open a new Word document and write a report outlining a course of action the company should take to improve its business. The report could include one of the following elements:
+	* Weaknesses, internal failings, or gaps within the company
+	* External threats. You should look at the company's competitors 		within the industry or issues within the broader sector 		to identify threats.
+	* New products the company could offer
+	* Changing demographics that could impact the future of the organization
+
+2. Your report should:
+	* Convey a professional tone.
+	* Demonstrate your best professional writing skills because those 		reviewing this document—the company’s board of directors—		are executives.	
+3. Ensure your document meets the following requirements:
+	* Length: 250–500 words
+	* References: Cited in APA formatLinks to an external site.
+4. Save and submit your report on or before the due date, so you can participate in the peer review activity.
