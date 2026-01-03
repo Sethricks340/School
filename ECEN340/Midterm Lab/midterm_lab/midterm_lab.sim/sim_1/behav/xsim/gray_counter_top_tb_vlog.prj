@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../midterm_lab.srcs/sources_1/new/clock_gen.v" \
+"../../../../midterm_lab.srcs/sources_1/new/gray_counter.v" \
+"../../../../midterm_lab.srcs/sources_1/new/gray_counter_top.v" \
+"../../../../midterm_lab.srcs/sources_1/new/gray_counter_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

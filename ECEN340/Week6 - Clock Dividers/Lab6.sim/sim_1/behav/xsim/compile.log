@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_dividers
+ERROR: [VRFC 10-3640] port 'btnD' is not defined [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:24]
+ERROR: [VRFC 10-8530] module 'clock_dividers' is ignored due to previous errors [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:22]
