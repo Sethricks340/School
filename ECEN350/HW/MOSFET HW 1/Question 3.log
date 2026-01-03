@@ -1,0 +1,15 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\sethr\Desktop\ECEN-350\ECEN350\HW\MOSFET HW 1\Question 3.net
+Start Time: Tue Nov 18 12:41:07 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+.step 
+Total elapsed time: 0.242 seconds.
+
+Files loaded:
+C:\Users\sethr\Desktop\ECEN-350\ECEN350\HW\MOSFET HW 1\Question 3.net
+C:\Users\sethr\AppData\Local\LTspice\lib\cmp\standard.mos
+
