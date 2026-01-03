@@ -15,5 +15,6 @@ PDFs of notebooks and other material from some of my college classes.
 | ECEN240  | Fundamentals of Digital Systems             | 2024 |
 | ECEN250  | Electric Circuit Analysis 2                 | 2024 |
 | ECEN260  | Microprocessor-Based System Design          | 2024 |
+| ECEN340  | Digital Systems Design                      | 2025 |
 | ECEN350  | Electronic Devices and Circuits             | 2025 |
 | GECIV100 | American Heritage                           | 2022 |
