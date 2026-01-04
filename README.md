@@ -18,5 +18,5 @@ PDFs of notebooks and other material from some of my college classes.
 | ECEN340  | Digital Systems Design                      | 2025 |
 | ECEN350  | Electronic Devices and Circuits             | 2025 |
 | ECEN390  | Electromagnetics                            | 2025 |
-| PH121    | Principles of Physics I                     | 2023 |
 | GECIV100 | American Heritage                           | 2022 |
+| PH121    | Principles of Physics I                     | 2023 |
