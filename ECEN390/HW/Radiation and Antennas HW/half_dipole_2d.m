@@ -1,0 +1,10 @@
+theta = linspace(0, 2*pi, 100);
+phi = 0;
+F = (cos((pi/2).*cos(theta))./sin(theta)).^2;
+F(1, 1) = 0;
+F(1, 100) = 0;
+[x,y,z]=sph2cart(phi,pi/2-theta,F);
+plot(x, z, 'b-'); grid on, axis equal;
+xlabel("x axis");
+ylabel("Dipole axis");
+title("2-D Radiation Pattern of a Half-Wave Dipole: Seth Ricks");
