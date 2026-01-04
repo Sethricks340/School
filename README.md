@@ -20,3 +20,4 @@ PDFs of notebooks and other material from some of my college classes.
 | ECEN390  | Electromagnetics                            | 2025 |
 | GECIV100 | American Heritage                           | 2022 |
 | PH121    | Principles of Physics I                     | 2023 |
+| PH123    | Principles of Physics II                    | 2024 |
