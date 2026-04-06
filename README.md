@@ -21,5 +21,6 @@ PDFs of notebooks and other material from some of my college classes.
 | GECIV100 | American Heritage                           | 2022 |
 | MATH215  | Multivariable Calculus                      | 2023 |
 | MATH316  | Differential Equations with Linear Algebra  | 2023 |
+| MATH330  | Engineering Statistics                      | 2026 |
 | PH121    | Principles of Physics I                     | 2023 |
 | PH123    | Principles of Physics II                    | 2024 |
