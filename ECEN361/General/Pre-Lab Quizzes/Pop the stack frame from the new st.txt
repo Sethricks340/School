@@ -1,0 +1,92 @@
+### RTOS and Task Scheduling Summary
+
+**Task States:**
+
+* **Running:** The task is currently executing and has control of the CPU.
+* **Ready:** Tasks are prepared to run; the number of ready tasks can exceed the total number of processors.
+* **Blocked:** The task is waiting for an event or resource.
+* **Suspended:** Inactive due to an external decision.
+* **Terminated:** Task has completed or been deleted; resources are being cleaned up.
+
+**Scheduler:**
+
+* Primary role: Determine which task should run next based on priority and task state.
+* Criteria for schedulability: A task's worst-case response time must be less than or equal to its deadline.
+
+**Task Model Characteristics (Basic RTOS):**
+
+1. Fixed number of tasks.
+2. Tasks are periodic.
+3. Tasks are independent.
+4. Timing expressed by deadline.
+5. Worst-case execution time is fixed and known.
+6. System overhead is negligible.
+
+**Hard RTOS Characteristics:**
+
+* Fast context switches.
+* Measurable intervals where system runs with interrupts disabled.
+* Short interrupt service routines (ISRs).
+* Support for interrupt priorities.
+* Support for task priorities.
+
+**Memory Management:**
+
+* **MMU:** Manages memory segmentation.
+* Other components: MPU, cache controller, branch predictor, floating point unit.
+
+**Context Switching:**
+
+* Preemptive: RTOS can interrupt a running task to switch to a higher-priority task.
+* Scheduler tasks are lower priority than hardware ISRs.
+* Nested interrupts are not required for RTOS success.
+
+**Scheduling Algorithms:**
+
+* **Round-Robin:** Cycles through tasks of equal priority, giving each a time slice; not fixed-priority.
+* **Earliest Deadline First (EDF):** Dynamic priority; task with closest deadline runs next.
+* **Shortest Job First (SJF):** Non-preemptive; runs task with smallest execution time next.
+* **Rate Monotonic Scheduling (RMS):** Fixed-priority; shorter period tasks get higher priority; best for fixed-priority tasks.
+* **Multilevel Feedback Queue:** Dynamic-priority; adjusts priorities based on task behavior; not fixed-priority.
+
+**Supervisor Call (SVC):**
+
+* Used to set up system calls.
+
+**Priority Inversion:**
+
+* Negative consequences:
+
+  1. Reactivity of higher-priority tasks is decreased.
+  2. Starvation of higher-priority tasks due to unrelated, mid-priority tasks preempting the lower-priority task holding a resource.
+
+**Other Notes:**
+
+* Worst-case response time occurs when a task is released simultaneously with all higher-priority tasks (critical instant theorem).
+
+
+
+Arrange the steps of a context switch in the correct order (specifically for an MCU based on the ARM Cortex-M core, but fairly general too).
+
+
+Push the stack frame to the stack (which includes all registers and program counter).
+
+Store current stack pointer.
+
+Change state of current task to ready. 
+
+Select a new task to run. 
+
+Retrieve new stack pointer from the new task block.
+
+Pop the stack frame from the new stack. 
+
+Set a special return value for the interrupt handler to activate "thread mode" at the end of the ISR.
+
+
+
+
+ 
+
+
+

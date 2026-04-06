@@ -1,0 +1,127 @@
+Question 1. 0.5 pts
+What can you say about the timers for HAL and SysTick in a FreeRTOS System:
+Group of answer choices
+
+SysTick and HAL timers should be separate because they often require different interrupt priorities. (Correct)
+HAL timers are always used by FreeRTOS for its internal tick count.
+SysTick is only used for debugging and not for task scheduling in FreeRTOS.
+HAL and SysTick timers are interchangeable and serve the same purpose in FreeRTOS.
+FreeRTOS does not use any hardware timers; it relies entirely on software timing.
+
+Question 2. 0.5 pts
+The term "bare-metal" is sometimes used to refer to a system that has no operating system programmed into it.
+Group of answer choices
+
+True (Correct)
+False
+
+Question 3. 0.5 pts
+Tasks are able to suspend other tasks, just like the supervisor.
+Group of answer choices
+
+True
+False (Correct)
+
+Question 4. 0.5 pts
+FreeRTOS is processor-independent, but is sometimes slightly customized to be able to match the feature and memory sizes of the hosting hardware.
+Group of answer choices
+
+True (Correct)
+False
+
+Question 5. 0.5 pts
+"CMSIS" is just a standardized set of calls (APIs) that act as an abstraction so that RTOS code could be transported across various RTOS flavors, like FreeRTOS. Sometimes the terminology is slightly different. Match the CMSIS term (API Call) with the equivalent FreeRTOS.
+Group of answer choices
+
+osThreadGetState();
+-> vTaskGetInfo() (Correct)
+osDelay();
+-> vTaskDelay() (Correct)
+OS_Tick_Setup();
+-> vConfigureTickInterrupt() (Correct)
+osThread();
+-> xTaskCreate() (Correct)
+osKernelStart();
+-> vTaskStartScheduler() (Correct)
+uwTick();
+-> xTaskGetTickCount() (Correct)
+
+Question 6. 0.5 pts
+There are three things that need to be entered into the code (main.c) in order to add a task into a FreeRTOS system:
+
+* The function prototype that defines what the callback looks like
+* The code to add the callback into the FreeRTOS Running Queue
+* The actual routine that does stuff
+  Which of the following lines could be the function prototype?
+  Group of answer choices
+
+void vSensorTask(void pvParameters); (Correct)
+xTaskCreate(vSensorTask, "Sensor", 100, NULL, 1, NULL);
+void vSensorTask(void pvParameters) { /* task code */ }
+vSensorTask();
+TaskHandle_t xHandle;
+
+Question 7. 1 pt
+FreeRTOS is one of the most popular open source embedded real-time operating systems.
+Group of answer choices
+
+True (Correct)
+False
+
+Question 8. 1 pt
+FreeRTOS offers 5 different flavors of heap memory management. Heap 3 is optimized for:
+Group of answer choices
+
+Using the standard C library malloc() and free() functions (Correct)
+Relies on the platform’s native heap management
+Supports full dynamic allocation and deallocation
+No internal memory management by FreeRTOS
+Best when platform-provided allocators are preferred
+
+Question 9. 1 pt
+What three files need to be included in your project to utilize CMSIS-Core?
+Group of answer choices
+
+Device startup code, system code, and the device header file (Correct)
+Peripheral driver library, linker script, and interrupt vector table
+CMSIS-DSP library, RTOS configuration file, and memory map file
+Debug access protocol, GPIO configuration file, and CMSIS-Zone descriptor
+Neural network kernel library, system clock configuration, and bootloader code
+
+Question 10. 1 pt
+What is provided by the CMSIS-Core default startup code?
+Group of answer choices
+
+The vector table, initial stack pointer, and reset handler that sets up the runtime environment before calling main() (Correct)
+A scheduler for managing threads and tasks in a real-time operating system
+A configuration interface for defining memory protection zones and access levels
+A set of neural network kernels optimized for embedded inference
+A peripheral driver abstraction layer for UART, SPI, and I2C communication
+
+Question 11. 1 pt
+Riot OS implements its own TCP/IP stack.
+Group of answer choices
+
+True (Correct)
+False
+
+Question 12. 1 pt
+What do the CMSIS-SVD and CMSIS-DAP specifications cover?
+Group of answer choices
+
+CMSIS-SVD defines a standardized XML format for describing the system view of a device, including peripherals and registers, while CMSIS-DAP provides a standard debug interface for programming and debugging Arm Cortex-M devices. (Correct)
+CMSIS-SVD defines a signal processing library for embedded systems, and CMSIS-DAP provides a real-time operating system interface for multitasking applications.
+CMSIS-SVD is used to configure memory protection zones, and CMSIS-DAP is a neural network inference engine for embedded AI.
+CMSIS-SVD describes GPIO pin configurations, and CMSIS-DAP is a driver abstraction layer for peripheral communication.
+CMSIS-SVD is a startup code generator for Cortex-M devices, and CMSIS-DAP is a configuration tool for device memory mapping.
+
+Question 13. 1 pt
+What are some of the main criteria for selecting an embedded operating system?
+Group of answer choices
+
+Hardware support (Correct)
+Middleware integration (Correct)
+Peripheral support (Correct)
+Range of use cases supported (Correct)
+Real-time clock drift rate
+Graphics performance for 3D rendering
