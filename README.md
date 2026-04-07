@@ -18,6 +18,7 @@ PDFs of notebooks and other material from some of my college classes.
 | ECEN340  | Digital Systems Design                      | 2025 |
 | ECEN350  | Electronic Devices and Circuits             | 2025 |
 | ECEN361  | Embedded Systems                            | 2026 |
+| ECEN380  | Signals and Systems                         | 2026 |
 | ECEN390  | Electromagnetics                            | 2025 |
 | GECIV100 | American Heritage                           | 2022 |
 | MATH215  | Multivariable Calculus                      | 2023 |
