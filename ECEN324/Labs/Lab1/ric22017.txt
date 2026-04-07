@@ -1,0 +1,355 @@
+==========================  Filename:  ==========================
+  Name: ric22017.c
+
+=========================  Compiling:  ==========================
+  Compilation succeeded! :) 
+
+==========================  Running:  ===========================
+  Program ran successfully. :)
+  The "Enter number:" prompt correctly printed to stderr. :)
+  No warnings or errors while running. That's a good sign! :)
+
+===================  Result of diff command:  ===================
+  Good work!
+  There are no differences between your output and the solution!
+
+=============  Checking other code requirements:  ===============
+
+  According to the grading script, it looks like you used a loop
+    and incremented variables that were formatted to create each
+    row in the table. That's good! :)
+
+  Good: The "Summary" in the header was updated. :)
+  Good: The comment above "main" was updated. :)
+  Good: All the "add code here" comments were replaced. :)
+
+  To Do: Double check that you used "malloc()" exactly twice.
+  Each time you used "malloc()" should appear below:
+   p1 = (int *)malloc(sizeof(int));
+   p1 = (int *)malloc(sizeof(int));
+  This script found 2 time(s) that you used "malloc()". Good!
+
+  To Do: Double check that you used "free()" twice.
+  Each time you used "free()" should appear below:
+   free(p1);
+   free(p2);
+  This script found 2 time(s) that you used "free()". Good!
+
+  To Do: Double check that you checked a pointer for NULL twice.
+  Each time you checked a pointer should appear below:
+   if (p1 == NULL){
+   if (p1 == NULL){
+  This script found 2 time(s) that you checked pointers. Good!
+
+  Comments appear to be free from spelling errors. :)
+
+=========================  Scoresheet: ==========================
+This is where you will score yourself using the CANVAS DocViewer
+according to the instructions given in our next class.
+
+
+  TOTAL SCORE  __________ / 50
+
+    STYLE __________ / 10
+
+        Things to check:
+        * Properly commented
+          - "descriptive text" comments were all updated
+          - "add code here" comments were all replaced
+	  - loop is commented (if not, apply -0.5)
+	  - malloc checks were commented (if not, apply -0.5)
+        * Proper indentation (if not, apply -0.5)
+        * Meaningful variable names (if not, apply -0.5)
+        * Free from spelling and grammar errors
+
+    PROGRAM CORRECTNESS __________ / 20
+
+      Compiling and running:
+	Things to check: 
+        * Code compiles
+        * code compiles without warnings
+        * Code runs without crashing (e.g., no seg fault)
+        * Code runs without warning or error messages
+
+      Output of program:
+	Things to check: 
+        * No whitespace differences shown with diff command 
+        * No non-whitespace differences shown with diff command:
+	  - Correct digits of precision
+	  - Integer outputs match
+	  - Float outputs match
+	  - Pointer outputs match
+	  - All other outputs patch
+        * The "Enter number" prompt correctly when to stderr
+
+    ELEGANCE __________ / 20
+
+      Table:
+	Things to check: 
+        * A loop used for the table without hardcoding values
+        * Used %o %d %x %c for formating different ways
+
+      Memory allocation:
+	Things to check:
+        * Performed two malloc() calls
+        * Checked return value on each malloc() call against NULL
+          - Printed warning for NULL pointer (if not, apply -0.5)
+          - Exited if pointer was NULL (if not, apply -0.5)
+        * Used free() twice to free up allocated memory
+
+      Other:
+	Things to check: 
+        * Uses field width, precision, and justification
+          parameters rather than hardcoding printf() spacings
+          and digits (if not, apply -1.0)
+
+
+================ Student's submitted source code:  ==============
+
+
+
+  /***********************************************************************
+* Program:
+*    Lab C_lab, ECEN 324 Learning C Lab
+*    Brother Allred, ECEN 324
+* Author:
+*    Seth Ricks
+* Summary:
+*    Practice with printing constants, printing variables, 
+*    using user input, printing formatted integers, printing 
+*    formatted floating points, and printing formatted tables
+************************************************************************/
+
+// Libraries
+#include <stdlib.h>
+#include <stdio.h>
+
+
+// Macros
+#define PI 3.1415926
+
+/*************************************************************************
+* function for practicing various forms of input and printing
+*************************************************************************/
+int main (void)
+{
+   // Note: Each Print instruction ends in a new line, unless noted
+
+   /************************ Printing constants *************************/
+
+   // Print out the number 24, formatted as a base 10 integer
+   int a = 24;
+   printf("%d\n", a);
+
+   // Print out the PI (macro) with 5 digits after the decimal point
+   printf("%1.5f\n", PI);
+
+
+   // Declare a constant char called LETTER, initialized to hold 'A'
+   const char LETTER = 'A';
+
+   // Print out the LETTER constant, formatted as a character
+   printf("%c\n", LETTER);
+
+   /************************ Printing variables *************************/
+
+   // Declare a float variable called payRate, initialized with 10.50
+   float payRate = 10.50;
+
+   // Declare an int variable called hours, initialized with 40
+   int hours = 40;
+
+   // Print "Users pay rate: $10.5" using the payRate variable
+   printf("Users pay rate: $%2.1f\n", payRate);
+
+   // Print " Hours worked: 40" using the hours variable
+   printf(" Hours worked: %i\n", hours);
+
+   // Print "    Gross Pay: $420" using hours*payRate as a floating point
+   printf("    Gross Pay: $%.0f\n", hours * payRate);
+
+   /************************* Using user input **************************/
+
+   // Declare an int variable called number
+   int number;
+
+   // Print the "Enter number: " prompt on standard error (without \n)
+   // Printing this with standard error, because we don't want this prompt in the output text file
+   fprintf(stderr, "Enter number: ");  
+
+
+   // Read a base-10 number from standard in, into the variable number
+   scanf("%d", &number);
+
+   // Print "Twice * is **", but replace * with the variable number
+   // and replace ** with (number * 2)
+   printf("Twice %d is %d\n", number, number * 2);
+
+   /******************* Formatted Integer Printing **********************/
+
+   // This is an int
+   int anInt = 99;
+
+   // Note: In this section, * is replaced with the variable anInt
+
+   // Print out a blank new line
+   printf("\n");
+
+   // Print "Integer: * ###" with the default decimal formatting
+   printf("Integer: %d ###\n", anInt);
+
+   // Print "Integer: * ###" with * having a width of 10, right justified
+   printf("Integer: %10d ###\n", anInt);
+
+   // Print "Integer: * ###" with * having a width of 10, left justified
+   printf("Integer: %-10d ###\n", anInt);
+
+  /**************** Formatted Floating Point Printing *******************/
+
+   // This is a float
+   float aFloat = 43.2;
+
+   // Note: In this section, * is replaced with the variable aFloat
+
+   // Print out a blank new line
+   printf("\n");
+
+   // Print "  Float: * ###" with 1 digit (of precision after the point)
+   printf("  Float: %.1f ###\n", aFloat);
+
+   // Print "  Float: * ###" with 1 digit, width 10, left justified
+   printf("  Float: %-10.1f ###\n", aFloat);
+
+   // Print "  Float: * ###" with 2 digits, width 10, right justified
+   printf("  Float: %10.2f ###\n", aFloat);
+
+   // Print "  Float: * ###" with 3 digits, no specified width
+   printf("  Float: %.3f ###\n", aFloat);
+
+   // Print "  Float: * ###" with 3 digits, width 10, right justified
+   printf("  Float: %10.3f ###\n", aFloat);
+
+   // Print "  Float: * ###" with 4 digits, width 10, left justified
+   printf("  Float: %-10.4f ###\n", aFloat);
+
+
+   /******************** Print a formatted a table ***********************
+
+   // Use a loop to print the table below, with the iterator i as the
+   // only variable, having a single printf() statement inside the loop
+   // for each line. Note that each line prints the same number four ways.
+
+        Oct   Dec   Hex   Char
+        ----------------------
+        141   97    61    a
+        142   98    62    b
+        143   99    63    c
+        144   100   64    d
+        145   101   65    e
+        146   102   66    f
+        147   103   67    g
+        150   104   68    h
+        151   105   69    i
+        152   106   6a    j
+        153   107   6b    k
+        154   108   6c    l
+        155   109   6d    m
+        156   110   6e    n
+        157   111   6f    o
+        160   112   70    p
+        161   113   71    q
+        162   114   72    r
+        163   115   73    s
+        164   116   74    t
+        165   117   75    u
+        166   118   76    v
+        167   119   77    w
+        170   120   78    x
+        171   121   79    y
+        172   122   7a    z
+
+    *********************************************************************/
+   printf("\n");
+   printf("\tOct   Dec   Hex   Char\n");
+   printf("\t----------------------\n");
+   // Each number has a width of 5, and is left justified.
+   for (int i = 97; i < 123; i++){ 
+      printf("\t%-5o %-5d %-5x %c\n", i, i, i, i);     
+   }
+   printf("\n");
+
+
+   /*************** Now play with pointers to finish up *****************/
+
+   // Here are two integer pointers
+   int *p1;
+   int *p2;
+
+   // Dynamically allocate memory for a new int, and have p1 point to it
+   p1 = (int *)malloc(sizeof(int));
+
+   // Note: Whenever you dynamically allocate memory, you should verify
+   // that the allocation was successful before using that memory.
+   // Add such a check below. If the allocation was not successful,
+   // then print "Out of Memory" to stardard error and early terminate
+   // with a return code of 1. An unsuccessfull memory allocation would
+   // have returned the NULL pointer (aka address zero) from malloc.
+   if (p1 == NULL){
+     printf("Out of Memory");
+     return 1;
+   }
+
+   // Store the number 42 in the memory location p1 points to
+   *p1 = 42;
+
+   // Have p2 point to the same place p1 points to
+   p2 = p1;
+
+   // Print "*p1 == x", where x is the int p1 points to, in decimal format
+   printf("*p1 == %d\n", *p1);
+
+   // Print "*p2 == x", where x is the int p2 points to, in decimal format
+   printf("*p2 == %d\n", *p2);
+
+   // Store the number 53 in the memory location p2 points to
+   *p2 = 53;
+
+   // Print "*p1 == x", where x is the int p1 points to, in decimal format
+   printf("*p1 == %d\n", *p1);
+
+   // Print "*p2 == x", where x is the int p2 points to, in decimal format
+   printf("*p2 == %d\n", *p2);
+
+   // Dynamically allocate memory for a new int, and have p1 point to it
+   // Malloc usually returns an unsigned int. We cast that to an int pointer
+   p1 = (int *)malloc(sizeof(int));
+
+   // Don't forget to check the memory allocation success before using p1
+   if (p1 == NULL){
+     printf("Out of Memory");
+     return 1;
+   }
+
+   // Store the number 88 in the memory location p1 points to
+   *p1 = 88;
+
+   // Print "*p1 == x", where x is the int p1 points to, in decimal format
+   printf("*p1 == %d\n", *p1);
+
+   // Print "*p2 == x", where x is the int p2 points to, in decimal format
+   printf("*p2 == %d\n", *p2);
+
+   // Note: Whenever you dynamically allocate memory, you should free up
+   // that memory when you are finished with it to a void a memory leak.
+   // Free up the two memory locations you previously allocated.
+   free(p1);
+   free(p2);
+
+   // Print the string "Hope you got the point of this example!"
+   printf("Hope you got the point of this example!\n");
+
+   return 0;
+}
+
+
+
