@@ -40,8 +40,8 @@ xHat = [0;0];
 PHat = eye(size(Am));
 
 %Kalman filter tuning matrices
-Q = diag([0.01,0.01]); % **** Process noise covariance
-R = 0.01; % *** Sensor noise covariance 
+Q = diag([0.02,0.02]); % **** Process noise covariance
+R = 0.3; % *** Sensor noise covariance 
 
 %Allocate memory to store the state-variables
 xVec = zeros(2,N); %True (but unknown) state variables
